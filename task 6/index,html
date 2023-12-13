@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор стоимости услуги</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Калькулятор стоимости услуги</h1>
+    <form id="calculator-form">
+        <div>
+            <label for="quantity">Количество:</label>
+            <input type="number" id="quantity" value="1">
+        </div>
+        <div>
+            <label>Тип услуги:</label>
+            <input type="radio" name="service" value="service1" checked> Уборка
+            <input type="radio" name="service" value="service2"> Ремонт
+            <input type="radio" name="service" value="service3"> Доставка
+        </div>
+        <div>
+            <label for="option">Опция услуги:</label>
+            <select id="option">
+                <option value="option1">Стандартная</option>
+                <option value="option2">Премиум</option>
+                <option value="option3">Экспресс</option>
+            </select>
+        </div>
+        <div>
+            <label for="property">Дополнительное свойство:</label>
+            <input type="checkbox" id="property" value="property1"> Страховка
+        </div>
+        <div>
+            <p>Итоговая стоимость: <span id="total-price">0</span> рублей</p>
+        </div>
+    </form>
+</body>
+</html>
